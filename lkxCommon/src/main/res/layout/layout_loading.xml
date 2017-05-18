@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.a90678.lkx_common_17_05_17_16_45.common.view.layout.LoadingLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/loading_layout">
+
+    <com.example.a90678.lkx_common_17_05_17_16_45.common.view.layout.LoadingFixedFlipper
+        android:id="@+id/flp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
+
+    <FrameLayout
+        android:id="@+id/load_transparent_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/load_error_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_error_page" />
+
+        <TextView
+            android:id="@+id/load_error_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载失败"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/load_empty_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_empty"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/data_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据为空" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loading_anim"
+            android:id="@+id/loading_iv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在加载" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/load_offline_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/data_empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="掉线了。。。" />
+
+        </LinearLayout>
+
+    </com.example.a90678.lkx_common_17_05_17_16_45.common.view.layout.LoadingFixedFlipper>
+
+</com.example.a90678.lkx_common_17_05_17_16_45.common.view.layout.LoadingLayout>

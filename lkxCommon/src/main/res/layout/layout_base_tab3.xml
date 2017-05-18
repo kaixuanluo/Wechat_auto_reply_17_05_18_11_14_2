@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/main_tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.design.widget.TabLayout>
+
+    <com.example.admin.mvpdagger2rxjavaretrofit_2017_01_10_14_36.CustomViewPager
+        android:visibility="gone"
+        android:id="@+id/main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.example.admin.mvpdagger2rxjavaretrofit_2017_01_10_14_36.CustomViewPager>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/base_tab_fl"
+        android:visibility="visible"></FrameLayout>
+
+</LinearLayout>
